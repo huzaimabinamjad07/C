@@ -18,7 +18,26 @@ int main()
 
     // ? 4. Print value of string
 
-    printf("%s", str); //  %s -> (Used to print string)
+    printf("%s\n", str); //  %s -> (Used to print string)
+
+    // ? 5. Access one charcter of string
+
+    printf("Character at index 1 = %c\n", str[1]);
+
+    // ? 6. Modify one character of string
+
+    str[1] = 'b';
+    printf("Character at index 1 = %c\n\n", str[1]);
+
+    // ? 7. Loop through a string
+
+    printf("%lu\n", sizeof(str));
+
+    for (int i = 0; i < sizeof(str); i++)
+    {
+        printf("%c", str[i]);
+    }
+    printf("\n");
 
     return 0;
 }
